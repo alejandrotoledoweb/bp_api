@@ -1,0 +1,21 @@
+spring:
+
+  application:
+    name: cuentas_movimientos
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banco_development_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+clients:
+  service:
+    url: http://localhost:8080/api
+server:
+  port: 8081
